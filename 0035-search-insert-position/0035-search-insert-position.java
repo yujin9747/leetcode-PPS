@@ -26,7 +26,7 @@ class Solution {
                 else return low;    // target이 같거나, 더 작은 경우에는 low 위치
             }
             else{   // 남은 배열의 길이가 0인 경우.
-                return high;
+                return high;    // recursive(mid+1, high)에서 mid+1이 high와 같아짐 -> target은 가장 큰 수로, 배열의 마지막에 삽입되어야 한다.
             }
         }
     }
