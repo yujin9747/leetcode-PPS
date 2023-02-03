@@ -12,14 +12,14 @@ class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode curr = head;
         int count=0;
-        if(head.next == null) return null;
-        
+                
         // singly-linked list의 전체 길이 구하기
         while(curr != null){
             count++;
             curr = curr.next;
         }
         
+        // 맨 앞의 노드를 제거해야 하는 경우
         if(count == n) return head.next;
         
         ListNode prev = null;
@@ -29,6 +29,7 @@ class Solution {
             curr = curr.next;
         }
         
+        // 제거하는 노드인 curr의 앞 노드에 curr의 뒤 노드를 연결시킨다.
         prev.next = curr.next;
         return head;
     }
