@@ -1,4 +1,6 @@
 /*
+merged sorted array
+
 생각 정리
 num2의 길이인 n 만큼 반복해야 함 -> m은 0이더라도 n은 0보다 큰 경우에도 수행해야 하기 때문이다. 
 n만큼 반복하며
@@ -8,6 +10,10 @@ num2의 값보다 큰 숫자를 찾으면, 해당 숫자 위치에 num2의 숫�
 
 but, 하나씩 뒤로 옮기는 것의 비용이 매우 클 수 있다.
 하나씩 옮기는 것의 비용을 줄이기 위한 대안은? 
+
+time complexity 계산해서 O(m + n)으로 만들어보기
+
+Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 */
 
 class Solution {
